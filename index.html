@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Bulb</title><link rel="stylesheet" href="style.css"/><script src="app.js"></script></head><body><div class="container"><div><h1 align="center"><img alt="Bulb" src="https://raw.githubusercontent.com/nullobject/bulb/master/logo.png" width="200px" /></h1>
+
+<p><a href="https://travis-ci.org/nullobject/bulb"><img src="https://travis-ci.org/nullobject/bulb.svg?branch=master" alt="Build Status"></a></p>
+<p>Bulb is a <a href="https://en.wikipedia.org/wiki/Reactive_programming">reactive
+programming</a> library for
+JavaScript. It provides a simple API for writing event-based programs in a
+declarative style.</p>
+<p>The main data type introduced by Bulb is called a <em>signal</em>. A signal can
+represent any time-varying source of values &mdash; for example, the value of a
+text input, a periodic timer, or even the position of the mouse pointer in the
+browser.</p>
+<p>The Bulb API provides many functions for creating signals from existing sources
+(e.g. AJAX requests, DOM events, timers, etc.) and for performing operations on
+signals.</p>
+<p>A number of libraries already exist for reactive programming in JavaScript
+(e.g. RxJS, Bacon.js, Most.js), but Bulb differs in that it tries to avoid
+providing a &quot;kitchen sink&quot;. Instead, Bulb defines a very focussed API which
+provides only the key building blocks for reactive programming in the
+JavaScript language.</p>
+<p>Features:</p>
+<ul>
+<li><p>Simple, focused API. Bigger isn't always better.</p>
+</li>
+<li><p>It's small, roughly 4 KB when minified and gzipped!</p>
+</li>
+</ul>
+<h2>Table of Contents</h2><ul>
+<li><a href="#getting-started">Getting Started</a><ul>
+<li><a href="#cdn">CDN</a></li>
+<li><a href="#node">Node</a></li>
+</ul>
+</li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#licence">Licence</a></li>
+</ul>
+<h2>Getting Started</h2><h3>CDN</h3><p>The quickest and easiest way to start using Bulb is to include a reference to
+the minified file in the head of your HTML file.</p>
+<p>You can always grab the latest version with:</p>
+<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://unpkg.com/bulb/dist/bulb.min.js&quot;>&lt;/script></code></pre><p>You can also use a specific version with:</p>
+<pre class="prettyprint source lang-html"><code>&lt;script src=&quot;https://unpkg.com/bulb@1.0.0/dist/bulb.min.js&quot;>&lt;/script></code></pre><h3>Node</h3><p>Install the npm package:</p>
+<pre class="prettyprint source lang-sh"><code>> npm install bulb</code></pre><p>Require it in your code:</p>
+<pre class="prettyprint source lang-js"><code>var bulb = require('bulb')
+var s = bulb.Signal.of(1)</code></pre><p>Or, if you are using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">ES6
+modules</a>,
+you can import just the bits you want:</p>
+<pre class="prettyprint source lang-js"><code>import {Signal} from 'bulb'
+const s = Signal.of(1)</code></pre><h2>Documentation</h2><ul>
+<li><a href="http://nullobject.github.io/bulb/api.html">API documentation</a></li>
+</ul>
+<h2>Examples</h2><ul>
+<li><a href="https://codepen.io/nullobject/pen/eyGQdY">Mouse Position</a></li>
+<li><a href="https://codepen.io/nullobject/pen/qpYoMw">Keyboard State</a></li>
+<li><a href="https://codepen.io/nullobject/pen/rpvaeg">Random Numbers</a></li>
+<li><a href="https://codepen.io/nullobject/pen/jYxzda">PIN Pad</a></li>
+</ul>
+<h2>Licence</h2><p>Bulb is licensed under the MIT licence. See the
+<a href="https://github.com/nullobject/bulb/blob/master/LICENCE.md">LICENCE</a> file for
+more details.</p></div></div></body></html>
